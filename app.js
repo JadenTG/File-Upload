@@ -7,7 +7,7 @@ const path = require('path');
 const app = express();
 
 //  Port to the server
-const port = 3000;
+const port = process.env.port || 3000;
 
 //  Multer configuration code for file uploads
 const storage = multer.diskStorage({
